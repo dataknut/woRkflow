@@ -6,7 +6,7 @@ Authors@R:
     c(person(given = "Ben",
            family = "Anderson",
            role = c("aut", "cre"),
-           email = "ben.anderson@otago.ac.nz")
+           email = "b.anderson@soton.ac.uk")
            )
 Description: A repo that collects various guidance and resources for people trying to set up and run collaborative reproducible analysis with R. Also a repo that can act as a template for you if you like how we work. You may not... 
 License: MIT License
