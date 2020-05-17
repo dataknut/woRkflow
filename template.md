@@ -8,6 +8,7 @@ Things you should touch:
 
 | Item        | Description  |
 | --- | --- |
+| **.gitignore** | A place to tell git what _not_ to synchronise e.g. `.csv` or [weird OS files](https://gist.github.com/adamgit/3786883)|
 | **env.R**  | Where we store all the parameters that might be re-used across our repo. Such as colour defaults, data paths etc. We avoid using a project/repo level .Rprofile because it can lead to [a **lot** of confusion](https://support.rstudio.com/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf). |
 | **DESCRIPTION** | But only if you use this as a tmeplate for your own repo - it is a special file for packages |
 | **LICENSE** | Edit to suit your needs |
@@ -27,3 +28,4 @@ Things you should not touch:
 | --- | --- |
 | **man/** | Created by building the project/package using roxygen2 |
 | **NAMESPACE** | - ditto - |
+| **.Rbuildignore** | - ditto - |
