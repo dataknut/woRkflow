@@ -2,6 +2,8 @@
 
 There are as many templates for (R) repos as there R users... Here's ours.
 
+### Structure
+
 We structure the repo as a package. We may never build it but usually we do so that the package functions are available everywhere in it
 
 Things you should touch:
@@ -35,3 +37,9 @@ Things you should not touch:
 | **man/** | Created by building the project/package using roxygen2 |
 | **NAMESPACE** | - ditto - |
 | **.Rbuildignore** | - ditto - |
+
+### Our coding habits
+
+We try to remember to call functions using `woRkflow::myFunction()` so we know exactly which package we are using. This also forces regular package re-builds so your new fancy updated function can be used.
+
+We defer to the [tidyverse style guide](https://style.tidyverse.org/) on many things although we do prefer using `camelCase` rather than `inserting_hyphens` in function and variable names.
