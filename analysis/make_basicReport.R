@@ -2,6 +2,8 @@
 
 # Libraries ----
 library(woRkflow) # remember to build it first :-)
+woRkflow::setup() # load env.R set up the default paths etc
+
 reqLibs <- c("data.table", # data munching
              "drake", # what's done stays done
              "here", # here
