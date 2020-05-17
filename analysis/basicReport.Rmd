@@ -1,0 +1,89 @@
+---
+params:
+  subtitle: ""
+  title: ""
+  authors: ""
+title: '`r params$title`'
+subtitle: '`r params$subtitle`'
+author: '`r params$authors`'
+date: 'Last run at: `r Sys.time()`'
+output:
+  bookdown::html_document2:
+    fig_caption: yes
+    code_folding: hide
+    number_sections: yes
+    toc: yes
+    toc_depth: 2
+    toc_float: TRUE
+  bookdown::pdf_document2:
+    fig_caption: yes
+    number_sections: yes
+  bookdown::word_document2:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 2
+    fig_width: 5
+always_allow_html: yes
+bibliography: '`r path.expand("~/bibliography.bib")`'
+---
+
+```{r knitrSetup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE) # by default turn off code echo
+```
+
+# A basic .Rmd template to illustrate our workflow
+
+## Data
+
+The following uses `skimr::skim()` to describe the data. Remember we created the skim output object in the R script. We just report it here.
+
+```{r reportSkim}
+# print out the skimr object by getting drake to bring it back from wherever
+# it is hidden
+drake::readd(skimTable) 
+```
+
+There's quite a lot of data...
+
+## Plot
+
+\@ref(fig:allDataPlot) plots every data point in the data (!). Remember we created the plot output object in the R script. We just print it here.
+
+```{r allDataPlot, fig.cap="Half-hourly generation (GW)"}
+# render the plot by getting drake to bring it back from wherever
+# it is hidden
+drake::readd(gWPlot)
+```
+
+# # Runtime
+
+```{r check runtime, include=FALSE}
+t <- proc.time() - startTime
+elapsed <- t[[3]]
+```
+
+Report generated in `r round(elapsed,2)` seconds ( `r round(elapsed/60,2)` minutes) using [knitr](https://cran.r-project.org/package=knitr) in [RStudio](http://www.rstudio.com) with `r R.version.string` running on `r R.version$platform`.
+
+# R environment
+
+## R packages used
+
+ * base R [@baseR]
+ * bookdown [@bookdown]
+ * data.table [@data.table]
+ * drake [@drake]
+ * ggplot2 [@ggplot2]
+ * here [@here]
+ * knitr [@knitr]
+ * lubridate [@lubridate]
+ * rmarkdown [@rmarkdown,@rmarkdownBook]
+
+## Session info
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
+
+# References
+
