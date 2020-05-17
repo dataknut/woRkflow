@@ -4,6 +4,7 @@
 #'
 #' @author Ben Anderson, \email{b.anderson@@soton.ac.uk}
 #' @export
+#' @family utils
 #'
 setup <- function() {
   source(here::here("env.R"))
