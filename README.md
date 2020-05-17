@@ -1,6 +1,6 @@
 # woRkflow
 
-How we do collaborative reproducible data analysis and reporting. Mostly (but not only) using R. Inspired by (@AlexaLFH)[https://twitter.com/AlexaLFH/status/1261633918782013440].
+How we do collaborative reproducible data analysis and reporting. Mostly (but not only) using R. Inspired by [@AlexaLFH](https://twitter.com/AlexaLFH/status/1261633918782013440).
 
 ## 'How to' resources:
 
