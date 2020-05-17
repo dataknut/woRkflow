@@ -1,0 +1,17 @@
+Package: woRkflow
+Type: Package
+Title: A template for how we do collaborative reproducible analysis with R #ymmv
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Ben",
+           family = "Anderson",
+           role = c("aut", "cre"),
+           email = "ben.anderson@otago.ac.nz")
+           )
+Description: A repo that collects various guidance and resources for people trying to set up and run collaborative reproducible analysis with R. Also a repo that can act as a template for you if you like how we work. You may not... 
+License: MIT License
+Imports: 
+  here
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
