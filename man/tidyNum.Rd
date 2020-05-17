@@ -12,6 +12,12 @@ tidyNum(number)
 \description{
 \code{tidyNum} reformats long numbers to include commas and prevents scientific formats
 }
+\seealso{
+Other utils: 
+\code{\link{loadLibraries}()},
+\code{\link{setup}()}
+}
 \author{
 Ben Anderson, \email{b.anderson@soton.ac.uk}
 }
+\concept{utils}

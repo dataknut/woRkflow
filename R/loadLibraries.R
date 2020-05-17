@@ -17,6 +17,7 @@
 #' @author Luke Blunden, \email{lsb@@soton.ac.uk} (original)
 #' @author Michael Harper \email{m.harper@@soton.ac.uk} (revised version)
 #' @export
+#' @family utils
 #'
 loadLibraries <- function(..., repo = "https://cran.rstudio.com"){
   

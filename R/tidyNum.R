@@ -6,6 +6,7 @@
 #'
 #' @author Ben Anderson, \email{b.anderson@@soton.ac.uk}
 #' @export
+#' @family utils
 #'
 tidyNum <- function(number) {
   format(number, big.mark=",", scientific=FALSE)

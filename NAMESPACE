@@ -3,4 +3,5 @@
 export(loadLibraries)
 export(setup)
 export(tidyNum)
+import(here)
 importFrom(utils,install.packages)

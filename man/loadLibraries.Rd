@@ -24,8 +24,14 @@ Especially useful when running on virtual machines where package installation
   whereas 'library' throws an error if it can't load the package. Hence 'loadLibraries'
   https://stackoverflow.com/questions/5595512/what-is-the-difference-between-require-and-library
 }
+\seealso{
+Other utils: 
+\code{\link{setup}()},
+\code{\link{tidyNum}()}
+}
 \author{
 Luke Blunden, \email{lsb@soton.ac.uk} (original)
 
 Michael Harper \email{m.harper@soton.ac.uk} (revised version)
 }
+\concept{utils}
