@@ -22,6 +22,7 @@ Things you should touch:
 | **[resources.md](resources.md)** | Our collection of guides and `how-tos` |
 | **[template.md](template.md)** | This file |
 
+More on data:
 
 > We recommend **not** putting your data in your repo at all. 
 
