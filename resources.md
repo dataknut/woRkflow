@@ -11,6 +11,7 @@
  * using [git(hub/lab)](https://happygitwithr.com/) for version control (perhaps via [usethis](https://usethis.r-lib.org/) and knowing about [ohshitgit](https://ohshitgit.com/) just in case)
  * using [git branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) as a way for different people to work on the same project without clashing 
     * Tom has [blogged](https://twrushby.wordpress.com/2017/03/27/collaboration-with-rstudio-and-git-using-branches/) about this
+    * we have written a [short guide](gitBranches.md)
     * [HappyGit](https://happygitwithr.com/fork-and-clone.html) gives you the details
     * [ohshitgit](https://ohshitgit.com/) may be required here too (but not if you've followed the instructions above)
  * using [git(hub/lab) issues](https://guides.github.com/features/issues/) as a way to manage your project - just like we did for the [new ECCD website](https://git.soton.ac.uk/SERG/sergwebsite/-/issues)
