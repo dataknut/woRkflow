@@ -6,7 +6,7 @@ You will have seen that git/github/gitlab repos have a `master` code base. You s
 
 Instead you should work inside a 'branch' of the code and when you have finished the code in the branch you should merge it back in via a pull request. That pull request is an opportunity for you and your team to quality-check or test your work _before_ merging it.
 
-For this reason branches should be small small things that fix or make a specific small contribution rather than a huge mass of changes. Once the work is done, merge the branch and start a new ine for a new task. This stops you from trying to fix 2 things in 1 branch and then realising you just want to merge 1 of them in to the master.
+For this reason branches should be small small things that fix or make a specific small contribution rather than a huge mass of changes. Once the work is done, merge the branch and start a new branch for a new task. This stops you trying to fix 2 things in 1 branch and then realising you just want to merge 1 of them in to the master.
 
 ## how
 
