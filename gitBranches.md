@@ -16,9 +16,10 @@ We have found the best workflow is to
  * create a new RStudio project using _your fork_ of the repo
    * It's possible you may need to set up a [new ssh key on github](https://happygitwithr.com/ssh-keys.html) to do this. What does this do? It tells github that the device you are using is authenticated. Tip: give the new SSH key on github a helpful name - e.g. the device it is associated with!
  * add the original master as an [upstream remote](https://happygitwithr.com/upstream-changes.html)
-    * **[create a new branch](https://happygitwithr.com/git-branches.html#create-a-new-branch) in _your fork_ of the orginal repo**. 
-    * Do some work, commit it locally.
- * when it works push your branch back up to the *original* repo
+ * **[create a new branch](https://happygitwithr.com/git-branches.html#create-a-new-branch) in _your fork_ of the orginal repo**. 
+    * Do some work in the new branch
+    * Commit it locally (repeat)
+ * when it works push your new branch back up to the *original* repo
     * open a new pull request to merge your branch into the master
     * do your team QA
     * ask the master code maintainer to accept your pull request
