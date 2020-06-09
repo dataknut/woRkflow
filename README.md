@@ -8,4 +8,4 @@ This repo does two things:
    * how to [use git branches](gitBranches.md) 
  * it is a [template](template.md) repo that illustrates how we work
 
-If you want to [contribute to the repo](contributing.md) or like how we work and want to use it as a template, simply [fork and go](https://happygitwithr.com/fork-and-clone.html).
+If you want to [contribute to the repo](CONTRIBUTING.md) or like how we work and want to use it as a template, simply [fork and go](https://happygitwithr.com/fork-and-clone.html).
