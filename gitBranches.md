@@ -14,6 +14,8 @@ We have found the best workflow is to
 
  * [fork](https://happygitwithr.com/fork-and-clone.html) the original repo to your personal githib/gitlab account. This means you do not need to be a member of the original repo to work on it. It also helps to prevent accidents to the original master.
  * add the original master as an [upstream remote](https://happygitwithr.com/upstream-changes.html)
+ * create a new RStudio project using _your fork_ of the repo
+   * It's possible you may need to set up a [new ssh key on github](https://happygitwithr.com/ssh-keys.html) to do this. What does this do? It tells github that the device you are using is authenticated. Tip: give the new SSH key on github a helpful name - e.g. the device it is associated with!
  * **make a new branch in _your fork_ of the orginal repo**. Do some work, commit it locally.
  * when it works push your branch back up to the *original* repo
  * open a new pull request to merge your branch into the master
@@ -21,6 +23,8 @@ We have found the best workflow is to
  * ask the master code maintainer to accept your pull request
  * your code is now in the master
  * delete your branch (to avoid confusion) - this is optional. The point is not to re-use this branch (unless there are errors in it that you need to fix. Your QA should have picked those up!)
+ * pull the changes from the original master to your fork on github
+ * pull these changes to wherever you are working if need be (although the upstream remote described above should avoid this)
  * **make a new branch for your next task**. etc
  
 For this and much more read https://happygitwithr.com/
