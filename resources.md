@@ -19,5 +19,5 @@
     * loading and processing all your data inside a drake plan in a .R file. _So it only gets re-run if the code or data changes_
     * creating each of your output objects inside the drake plan. _So they only get re-created if the code or data changes_
     * rendering your .Rmd report at the end of the drake plan. _So you can pass the params in and report the output objects_
-    * => the first time you run the plan it will build everything. The second time, e.g. after you fix a .Rmd typo, _only the bits that have changed get re-built_.
+    * => the first time you run the plan it will build everything. The second time, e.g. after you fix a .Rmd typo, _only the bits that have changed get re-built_. **Warning: drake can reduce the time it takes to run your code by an order of magnitude. This could seriously damage your tea & cake in-take...**
  
