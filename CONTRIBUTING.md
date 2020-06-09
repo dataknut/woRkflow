@@ -7,3 +7,4 @@ Be nice:
  
 Don't know how to do this? [Read our guide](gitBranches.md).
  
+Need more info? Read the excellent [contributing to opensource code](https://opensource.guide/how-to-contribute/) guidance.
