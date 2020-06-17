@@ -6,6 +6,7 @@ This repo does two things:
 
  * it is a collection of [resources](resources.md) including some notes on:
    * how to [use git branches](gitBranches.md) 
+   * how to use [drake](https://docs.ropensci.org/drake/) to massively speed up and [manage your workflow](https://milesmcbain.xyz/the-drake-post/)
  * it is a [template](template.md) repo that illustrates how we work - feel free to re-use
 
 If you want to [contribute to the repo](CONTRIBUTING.md) or like how we work and want to use it as a template, simply [fork and go](https://happygitwithr.com/fork-and-clone.html).
