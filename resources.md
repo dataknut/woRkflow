@@ -9,11 +9,15 @@
     * and much more, although:
         *  we don't agree with [keeping your data in your project](https://rstats.wtf/project-oriented-workflow.html#work-in-a-project). Data should be somewhere else, _unless you're a .gitignore wizard_ and your data is small (and non-sensitive/non-commercial/public etc)
  * using [git(hub/lab)](https://happygitwithr.com/) for version control (perhaps via [usethis](https://usethis.r-lib.org/) and knowing about [ohshitgit](https://ohshitgit.com/) just in case)
- * using [git branches](https://twrushby.wordpress.com/2017/03/27/collaboration-with-rstudio-and-git-using-branches/) as a way for different people to work on the same project without clashing - [ohshitgit](https://ohshitgit.com/) may be required here too
+ * using [git branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) as a way for different people to work on the same project without clashing 
+    * Tom has [blogged](https://twrushby.wordpress.com/2017/03/27/collaboration-with-rstudio-and-git-using-branches/) about this
+    * we have written a [short guide](gitBranches.md)
+    * [HappyGit](https://happygitwithr.com/fork-and-clone.html) gives you the details
+    * [ohshitgit](https://ohshitgit.com/) may be required here too (but not if you've followed the instructions above)
  * using [git(hub/lab) issues](https://guides.github.com/features/issues/) as a way to manage your project - just like we did for the [new ECCD website](https://git.soton.ac.uk/SERG/sergwebsite/-/issues)
  * how to use [drake](https://docs.ropensci.org/drake/) to massively speed up and [manage your workflow](https://milesmcbain.xyz/the-drake-post/). This includes always:
     * loading and processing all your data inside a drake plan in a .R file. _So it only gets re-run if the code or data changes_
     * creating each of your output objects inside the drake plan. _So they only get re-created if the code or data changes_
     * rendering your .Rmd report at the end of the drake plan. _So you can pass the params in and report the output objects_
-    * => the first time you run the plan it will build everything. The second time, e.g. after you fix a .Rmd typo, _only the bits that have changed get re-built_.
+    * => the first time you run the plan it will build everything. The second time, e.g. after you fix a .Rmd typo, _only the bits that have changed get re-built_. **Warning: drake can reduce the time it takes to run your code by an order of magnitude. This could seriously damage your tea & cake in-take...**
  
