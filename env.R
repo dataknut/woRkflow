@@ -14,7 +14,7 @@ repoParams$user <- repoParams$info[[7]]
 
 # use this guess to set a data path
 # default
-dPath <- "unkown - fix your code!"
+dPath <- "unkown - find this line in env.R and fix it!"
 if (repoParams$nodename == "srv02405") {
   # we're on the UoS RStudio server so we can set the data path to J: (as mounted)
   dPath <- path.expand("/mnt/SERG_data/")
