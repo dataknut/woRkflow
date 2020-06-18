@@ -25,7 +25,7 @@ output:
     toc_depth: 2
     fig_width: 5
 always_allow_html: yes
-bibliography: '`r path.expand("~/bibliography.bib")`'
+bibliography: '`r here::here("bibliography.bib")`'
 ---
 
 ```{r knitrSetup, include=FALSE}
@@ -56,7 +56,7 @@ There's quite a lot of data...
 drake::readd(gWPlot)
 ```
 
-# # Runtime
+# Runtime
 
 ```{r check runtime, include=FALSE}
 t <- proc.time() - startTime
