@@ -53,11 +53,11 @@ makeGWPlot <- function(dt){
 
 makeReport <- function(f){
   # default = html
-  rmarkdown::render(input = paste0(here::here("analysis", f),".Rmd"), # we love here:here()
+  rmarkdown::render(input = paste0(here::here("Rmd", f),".Rmd"), # we love here:here() - it helps us find the .Rmd to use
                     params = list(title = title,
                                   subtitle = subtitle,
                                   authors = authors),
-                    output_file = paste0(here::here("docs", f),".html")
+                    output_file = paste0(here::here("docs", f),".html") # where the output goes
   )
 }
 # Set up ----
@@ -78,7 +78,7 @@ make(plan) # run the plan, re-loading data if needed
 
 # Run the report ----
 # run the report - don't do this inside the drake plan as 
-# drake can't track the .rmd file if it is not explicitly named
+# drake can't seem to track the .rmd file if it is not explicitly named
 makeReport(rmdFile)
 
 # Finish off ----
