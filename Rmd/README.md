@@ -1,6 +1,6 @@
 # woRkflow
 
-## analysis
+## Rmd
 
 The place to put your analysis code - see [template info](../template.md).
 
