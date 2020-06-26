@@ -6,11 +6,8 @@
 
  * install [RStudio](https://rstudio.com/products/rstudio/)
  * make sure you can log in to [git.soton.ac.uk](git.soton.ac.uk/)
- * check you have an ssh key set up for the laptop/PC/server you are going to use RStudio on
- 
-## Make sure you have Teams
-
-We will be using the screen sharing a lot
+ * check you have an ssh key set up for the laptop/PC/server where you are going to use RStudio
+ * Make sure you have Teams - we will be using the screen sharing a lot
 
 ## On the day we will
 
