@@ -20,10 +20,11 @@
  * test /Rmd/make_basicReport.R and see why it doesn't work
  * build the repo as a R package
  * re-test /Rmd/make_basicReport.R to see if it works now
- * work through /Rmd/make_basicReport.R to understand:
+ * work through /Rmd/make_basicReport.R and basicReport.Rmd to understand:
    * what drake is doing and how it helps
    * why data.table is really fast
    * why lubridate is so useful for dates and times
+   * why you use drake to build stuff and Rmd to report it
    * how to get ggplot2 to make pretty plots
   
  * That's it :-)
