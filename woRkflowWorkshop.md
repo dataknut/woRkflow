@@ -14,12 +14,19 @@
  * fork the [woRkflow repo](https://git.soton.ac.uk/SERG/workflow) to your personal space on git.soton.ac.uk
  * clone your personal fork of the repo to the laptop/PC/server where you are going to use RStudio 
  * explore the repo to see what is in:
-   * /R
    * .env.R
-   * /Rmd
+   * /R
+   * /Rmd - what's in:
+     *  make_basicReport.R?
+     *  basicReport.Rmd?
  * test /Rmd/make_basicReport.R and see why it doesn't work
- * build the repo as a R package
- * re-test /Rmd/make_basicReport.R to see if it works now
+    * test workflow::setup()
+    * test workflow::tidyNum(1234)
+ * build the repo as an R package using the RStudio -> Build menu (check build config for roxygen)
+ * convince yourself that:
+    * workflow::setup() now works
+    * workflow::tidyNum(1234) now rowks
+ * See if /Rmd/make_basicReport.R works now
  * work through /Rmd/make_basicReport.R and basicReport.Rmd to understand:
    * what drake is doing and how it helps
    * why data.table is really fast
