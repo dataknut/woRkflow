@@ -25,7 +25,7 @@
  * build the repo as an R package using the RStudio -> Build menu (check build config for roxygen)
  * convince yourself that:
     * workflow::setup() now works
-    * workflow::tidyNum(1234) now rowks
+    * workflow::tidyNum(1234) now works
  * See if /Rmd/make_basicReport.R works now
  * work through /Rmd/make_basicReport.R and basicReport.Rmd to understand:
    * what drake is doing and how it helps
