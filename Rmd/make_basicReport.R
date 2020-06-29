@@ -61,7 +61,6 @@ makeReport <- function(f){
   )
 }
 # Set up ----
-woRkflow::setup() # set stuff up
 startTime <- proc.time()
 
 # Set the drake plan ----
