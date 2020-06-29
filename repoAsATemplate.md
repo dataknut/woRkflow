@@ -4,7 +4,7 @@ There are as many templates for (R) repos as there R users... Here's ours.
 
 ### Structure
 
-We structure the repo as a package. We may never build it but usually we do so that the package functions are available everywhere in it
+We structure the repo as an [R package](https://r-pkgs.org/). We may never build it but usually we do so that the package functions are available everywhere in it
 
 Things you should touch:
 
