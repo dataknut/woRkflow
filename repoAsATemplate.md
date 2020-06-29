@@ -27,7 +27,7 @@ More on data:
 > We recommend **not** putting your data in your repo at all. 
 
 Yes, this breaks true reproducability but there are reasons:
- * we often use data that is commercial or sensitive or personal (under GDPR) - so we cannot risk that leaking out
+ * we often use data that is commercial or sensitive or personal (under GDPR) - so we cannot risk that leaking out via git.soton, github.com or gitlab.com
  * we often use _very large_ datasets which most git/hub/lab services sensibly reject
  * we often pull real time data on the fly from elsewhere so storage makes no sense 
         
