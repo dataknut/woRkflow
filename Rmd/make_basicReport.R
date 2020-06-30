@@ -37,7 +37,7 @@ getData <- function(f,update){
 makeGWPlot <- function(dt){
   # expects the eso data as a data.table
   # draws a plot
-  dt[, rDateTime := lubridate::ymd_hms(DATETIME)]
+  dt[, rDateTime := lubridate::ymd_hms(DATETIME)] # hurrah, somebody read https://speakerdeck.com/jennybc/how-to-name-files?slide=21
   dt[, weekDay := lubridate::wday(rDateTime, label = TRUE)]
   # draw a megaplot for illustrative purposes
   p <- ggplot2::ggplot(dt, aes(x = rDateTime, 
