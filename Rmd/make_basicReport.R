@@ -66,7 +66,7 @@ startTime <- proc.time()
 # Set the drake plan ----
 # Clearly this will fail if you do not have internet access...
 plan <- drake::drake_plan(
-  esoData = getData(urlToGet, update), # returns data as data.table. If you edit update in any way it will reload - drake is watching you!
+  esoData = getData(urlToGet, update), # returns data as data.table. If you edit 'update' in any way it will reload - drake is watching you!
   skimTable = skimr::skim(esoData), # create a data description table
   gWPlot = makeGWPlot(esoData) # make a plot
 )
@@ -79,6 +79,10 @@ make(plan) # run the plan, re-loading data if needed
 # run the report - don't do this inside the drake plan as 
 # drake can't seem to track the .rmd file if it is not explicitly named
 makeReport(rmdFile)
+
+# Just to show we can bring spirits back from the deep (i.e. from wherever drake hid them)
+dt <- drake::readd(esoData)
+message("Data covers ", min(dt$rDateTime), " to ", max(dt$rDateTime))
 
 # Finish off ----
 
