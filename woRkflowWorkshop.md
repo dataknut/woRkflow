@@ -12,6 +12,7 @@
     * lubridate
     * hms
     * ggplot2 (or just install the whole tidyverse)
+    * skimr
  * make sure you can log in to [git.soton.ac.uk](git.soton.ac.uk/)
  * check you have an ssh key set up on git.soton for the laptop/PC/server where you are going to use RStudio - see [rstudio's help](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or [this one](https://happygitwithr.com/ssh-keys.html)
  * Make sure you have Teams - we will be using the screen sharing a lot
