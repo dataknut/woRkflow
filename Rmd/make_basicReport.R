@@ -50,7 +50,7 @@ makeGWPlot <- function(dt){
          caption = "Source: UK Grid ESO (http://data.nationalgrideso.com)")
   return(p)
 }
-version <- 1.0
+version <- 10
 makeReport <- function(f,version){
   # default = html
   rmarkdown::render(input = paste0(here::here("Rmd", f),".Rmd"), # we love here:here() - it helps us find the .Rmd to use
