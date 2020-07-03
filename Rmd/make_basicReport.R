@@ -41,7 +41,7 @@ makeGWPlot <- function(dt){
   dt[, weekDay := lubridate::wday(rDateTime, label = TRUE)]
   # draw a megaplot for illustrative purposes
   p <- ggplot2::ggplot(dt, aes(x = rDateTime, 
-                               y = GENERATION/1000,
+                               y = GENERATION/1000000,
                                colour = weekDay)) +
     geom_point() +
     theme(legend.position = "bottom") +
@@ -50,16 +50,17 @@ makeGWPlot <- function(dt){
          caption = "Source: UK Grid ESO (http://data.nationalgrideso.com)")
   return(p)
 }
-
-makeReport <- function(f){
+version <- 1.0
+makeReport <- function(f,version){
   # default = html
   rmarkdown::render(input = paste0(here::here("Rmd", f),".Rmd"), # we love here:here() - it helps us find the .Rmd to use
                     params = list(title = title,
                                   subtitle = subtitle,
                                   authors = authors),
-                    output_file = paste0(here::here("docs", f),".html") # where the output goes
+                    output_file = paste0(here::here("docs", f),version,".html") # where the output goes
   )
 }
+
 # Set up ----
 startTime <- proc.time()
 
@@ -73,16 +74,19 @@ plan <- drake::drake_plan(
 
 # Run drake plan ----
 plan # test the plan
+
 make(plan) # run the plan, re-loading data if needed
 
 # Run the report ----
 # run the report - don't do this inside the drake plan as 
 # drake can't seem to track the .rmd file if it is not explicitly named
-#makeReport(rmdFile)
+makeReport(rmdFile)
 
 # Just to show we can bring spirits back from the deep (i.e. from wherever drake hid them)
 dt <- drake::readd(esoData)
-message("Data covers ", min(dt$rDateTime), " to ", max(dt$rDateTime))
+dt[, rDateTimeUTC := lubridate::as_datetime(DATETIME)]
+
+message("Data covers ", min(dt$rDateTimeUTC), " to ", max(dt$rDateTimeUTC))
 
 # Finish off ----
 
