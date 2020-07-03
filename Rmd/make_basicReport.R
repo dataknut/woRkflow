@@ -78,7 +78,7 @@ make(plan) # run the plan, re-loading data if needed
 # Run the report ----
 # run the report - don't do this inside the drake plan as 
 # drake can't seem to track the .rmd file if it is not explicitly named
-makeReport(rmdFile)
+#makeReport(rmdFile)
 
 # Just to show we can bring spirits back from the deep (i.e. from wherever drake hid them)
 dt <- drake::readd(esoData)
