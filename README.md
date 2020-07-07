@@ -10,4 +10,4 @@ This repo does three things:
  * it is a [template](repoAsATemplate.md) repo that illustrates how we work and which you can copy;
  * it is an R package that you can build if you want to using 'install and restart' from the RStudio Build menu. If you do you will then be able to use its functions viz: `woRkflow::functionName()` (not that it has many).
 
-If you want to [contribute to the repo](CONTRIBUTING.md), or like how we work and want to use it as a template for your project or package, just [fork and go](https://happygitwithr.com/fork-and-clone.html).
+If you want to [contribute to the repo](CONTRIBUTING.md), or like how we work and want to use it as a template for your project or package, just [fork and go](https://happygitwithr.com/fork-and-clone.html). As a number of people have pointed out that only works if you have an account on git.soton.ac.uk. If you have not, you can import the repo to (for example) your  [github.com](https://github.com/new/import) account and go from there. And presumably on gitlab.com too...
