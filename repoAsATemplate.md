@@ -17,7 +17,7 @@ Things you should touch:
 | **[env.R](env.R)**  | Where we store all the parameters that might be re-used across our repo. Such as colour defaults, data paths etc. We avoid using a project/repo level .Rprofile because it can lead to [a **lot** of confusion](https://support.rstudio.com/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf). |
 | **[LICENSE](LICENSE)** | Edit to suit your needs |
 | **[notData/](notData/)** | Where we do not store data. R packages expect certain kinds of data in their 'data/' folders. Do not put your data in it. |
-| **[R/](R/)** | Where we store functions that get built |
+| **[R/](R/)** | Where we store functions that get built by the package - these are then available for use in any project|
 | **[README.md](README.md)** | Repo readme |
 | **[resources.md](resources.md)** | Our collection of guides and `how-tos` |
 | **[repoAsATemplate.md](repoAsATemplate.md)** | This file |
